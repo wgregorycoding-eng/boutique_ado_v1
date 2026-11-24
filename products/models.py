@@ -28,3 +28,6 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+    
+    has_sizes = models.BooleanField(default=False, null=True, blank=True)
+    
